@@ -149,7 +149,7 @@ function quick_merge_admin_main()
 	$form_container = new FormContainer($lang->quick_merge_manage_threads);
 
 	$form_container->output_row_header($lang->quick_merge_tid_title, array("width" => '10%'));
-	$form_container->output_row_header(, array("width" => '70%'));
+	$form_container->output_row_header($lang->quick_merge_subject_title, array("width" => '70%'));
 	$form_container->output_row_header($lang->quick_merge_display_order_title, array("width" => '10%'));
 	$form_container->output_row_header($lang->quick_merge_controls_title, array("width" => '10%'));
 

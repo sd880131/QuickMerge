@@ -75,7 +75,7 @@ EOF;
 		"authorsite" => "http://www.rantcentralforums.com",
 		"version" => "1.0",
 		"compatibility" => "16*",
-		"guid" => "870e9163e2ae9b606a789d9f7d4d2462",
+		"guid" => "90cc9bac4e5d4111fbb66552b0d4dda9",
 	);
 }
 
