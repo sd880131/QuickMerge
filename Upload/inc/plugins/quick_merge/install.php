@@ -73,7 +73,7 @@ EOF;
 		"website" => "https://github.com/WildcardSearch/QuickMerge",
 		"author" => $author,
 		"authorsite" => "http://www.rantcentralforums.com",
-		"version" => "1.0",
+		"version" => "1.0.1",
 		"compatibility" => "16*",
 		"guid" => "90cc9bac4e5d4111fbb66552b0d4dda9",
 	);

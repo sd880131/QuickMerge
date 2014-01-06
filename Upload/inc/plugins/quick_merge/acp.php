@@ -210,7 +210,7 @@ function quick_merge_admin_config_action_handler(&$action)
 $plugins->add_hook('admin_config_menu', 'quick_merge_admin_config_menu');
 function quick_merge_admin_config_menu(&$sub_menu)
 {
-	global $lang, $html;
+	global $lang;
 
 	if(!$lang->quick_merge)
 	{
@@ -223,7 +223,7 @@ function quick_merge_admin_config_menu(&$sub_menu)
 	(
 		'id' 		=> 'quick_merge',
 		'title' 	=> $lang->quick_merge,
-		'link' 		=> $html->url
+		'link' 		=> QUICK_MERGE_URL
 	);
 }
 
