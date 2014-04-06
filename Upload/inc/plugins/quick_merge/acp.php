@@ -34,6 +34,8 @@ function quick_merge_admin_load()
 	}
 
 	// URL, link and image markup generator
+	require_once MYBB_ROOT . "inc/plugins/quick_merge/classes/html_generator.php";
+	require_once MYBB_ROOT . "inc/plugins/quick_merge/classes/quick_merge_thread.php";
 	$html = new HTMLGenerator(QUICK_MERGE_URL);
 	QuickMergeCache::load_cache();
 

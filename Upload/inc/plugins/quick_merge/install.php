@@ -73,7 +73,7 @@ EOF;
 		"website" => "https://github.com/WildcardSearch/QuickMerge",
 		"author" => $author,
 		"authorsite" => "http://www.rantcentralforums.com",
-		"version" => "1.0.1",
+		"version" => "1.0.2",
 		"compatibility" => "16*",
 		"guid" => "90cc9bac4e5d4111fbb66552b0d4dda9",
 	);
@@ -104,7 +104,10 @@ function quick_merge_install()
 	}
 
 	// settings tables, templates, groups and setting groups
-	require_once MYBB_ROOT . 'inc/plugins/quick_merge/classes/installer.php';
+	if(!class_exists('WildcardPluginInstaller'))
+	{
+		require_once MYBB_ROOT . 'inc/plugins/quick_merge/classes/installer.php';
+	}
 	$installer = new WildcardPluginInstaller(MYBB_ROOT . 'inc/plugins/quick_merge/install_data.php');
 	$installer->install();
 }
@@ -149,7 +152,10 @@ function quick_merge_deactivate()
 function quick_merge_uninstall()
 {
 	// settings tables, templates, groups and setting groups
-	require_once MYBB_ROOT . 'inc/plugins/quick_merge/classes/installer.php';
+	if(!class_exists('WildcardPluginInstaller'))
+	{
+		require_once MYBB_ROOT . 'inc/plugins/quick_merge/classes/installer.php';
+	}
 	$installer = new WildcardPluginInstaller(MYBB_ROOT . 'inc/plugins/quick_merge/install_data.php');
 	$installer->uninstall();
 }
