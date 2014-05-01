@@ -20,8 +20,6 @@ require_once MYBB_ROOT . "inc/plugins/quick_merge/classes/data_cache.php";
 // load the install/admin routines only if in ACP.
 if(defined("IN_ADMINCP"))
 {
-	require_once MYBB_ROOT . "inc/plugins/quick_merge/classes/html_generator.php";
-	require_once MYBB_ROOT . "inc/plugins/quick_merge/classes/quick_merge_thread.php";
 	require_once MYBB_ROOT . "inc/plugins/quick_merge/acp.php";
 }
 else

@@ -78,7 +78,7 @@ $templates = array
 	"qm_form" => <<<EOF
 
 <form style="float: left; margin-left: 20px; padding: 10px;" action="moderation.php" method="post">
-<select name="quick_merge_dest">
+<select name="quick_merge_dest" onchange="this.up('form').submit(); return true;">
 	<option>{\$lang->quick_merge_action_text}</option>
 {\$options}
 </select>
@@ -88,7 +88,7 @@ $templates = array
 EOF
 	,
 	"qm_thread_row" => <<<EOF
-<option value="{\$tid}" onclick="this.up('form').submit(); return true;">{\$title}</option>
+<option value="{\$tid}">{\$title}</option>
 
 EOF
 );
